@@ -1,4 +1,4 @@
-# 🧾 API CRUD de Clientes
+# 🧾 Client API
 
 Este projeto é uma **API RESTful de Gerenciamento de Clientes (CRUD)** desenvolvida com **Spring Boot** e **Java 17**.  
 Foi criado para praticar conceitos fundamentais como:
@@ -59,7 +59,7 @@ Foi criado para praticar conceitos fundamentais como:
 ---
 ---
 
-# 🧾 Client CRUD API
+# 🧾 Client API
 
 This project is a **RESTful Client Management API (CRUD)** developed with **Spring Boot** and **Java 17**.  
 It was created to practice fundamental concepts such as:
