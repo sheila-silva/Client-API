@@ -23,7 +23,7 @@ Foi criada para exercitar conceitos fundamentais como:
 
 ## ⚙️ Regras de Validação
 
-| **name** | Não pode ser vazio: `@NotBlank(message = "O nome não pode estar vazio.")`
+| **name** | Não pode ser vazio: `@NotBlank(message = "O nome não pode estar vazio.")`  
 | **birthDate** | Não pode ser uma data futura: `@PastOrPresent(message = "A data de nascimento não pode ser futura.")` 
 
 ---
@@ -31,13 +31,13 @@ Foi criada para exercitar conceitos fundamentais como:
 ## 🚦 Respostas HTTP testadas:
 
 | GET /clients/{id} | Sucesso | 200 | Retorna o cliente |  
-| GET /clients/{id} | Erro | 404 | Cliente não encontrado |
-| POST /clients | Sucesso | 201 | Cliente criado com sucesso |
-| POST /clients | Erro | 422 | Dados inválidos |
-| PUT /clients/{id} | Sucesso | 200 | Cliente atualizado |
-| PUT /clients/{id} | Erro | 404 / 422 | Cliente inexistente ou dados inválidos |
-| DELETE /clients/{id} | Sucesso | 204 | Cliente excluído |
-| DELETE /clients/{id} | Erro | 404 | Cliente inexistente |
+| GET /clients/{id} | Erro | 404 | Cliente não encontrado |  
+| POST /clients | Sucesso | 201 | Cliente criado com sucesso |  
+| POST /clients | Erro | 422 | Dados inválidos |  
+| PUT /clients/{id} | Sucesso | 200 | Cliente atualizado |  
+| PUT /clients/{id} | Erro | 404 / 422 | Cliente inexistente ou dados inválidos |  
+| DELETE /clients/{id} | Sucesso | 204 | Cliente excluído |  
+| DELETE /clients/{id} | Erro | 404 | Cliente inexistente |  
 
 ---
 
