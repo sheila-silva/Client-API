@@ -1,11 +1,11 @@
-# 🧾 Client CRUD API
+# 🧾 API CRUD de Clientes
 
-Este projeto é uma **API RESTful de gerenciamento de clientes (CRUD)** desenvolvida com **Spring Boot** e **Java 17**.  
-Foi criada para exercitar conceitos fundamentais como:
-- Implementação de operações CRUD completas;
-- Tratamento de exceções customizadas;
-- Validação de dados com **Bean Validation**;
-- Paginação e ordenação de resultados;
+Este projeto é uma **API RESTful de Gerenciamento de Clientes (CRUD)** desenvolvida com **Spring Boot** e **Java 17**.  
+Foi criado para praticar conceitos fundamentais como:
+- Implementação completa das operações CRUD;  
+- Tratamento de exceções personalizadas;  
+- Validação de dados com **Bean Validation**;  
+- Paginação e ordenação de resultados;  
 - Retorno de respostas HTTP adequadas (404, 422, etc.).
 
 ---
@@ -17,27 +17,31 @@ Foi criada para exercitar conceitos fundamentais como:
 ✅ Inserção de novo cliente  
 ✅ Atualização de cliente existente  
 ✅ Exclusão de cliente  
-✅ Tratamento completo de exceções e mensagens customizadas  
+✅ Tratamento completo de exceções com mensagens customizadas  
 
 ---
 
 ## ⚙️ Regras de Validação
 
-| **name** | Não pode ser vazio: `@NotBlank(message = "O nome não pode estar vazio.")`  
-| **birthDate** | Não pode ser uma data futura: `@PastOrPresent(message = "A data de nascimento não pode ser futura.")` 
+| **Campo** | **Regra** |
+|------------|-----------|
+| **name** | Não pode ser vazio: `@NotBlank(message = "O nome não pode estar vazio.")` |
+| **birthDate** | Não pode ser uma data futura: `@PastOrPresent(message = "A data de nascimento não pode ser futura.")` |
 
 ---
 
-## 🚦 Respostas HTTP testadas:
+## 🚦 Respostas HTTP Testadas
 
-| GET /clients/{id} | Sucesso | 200 | Retorna o cliente |  
-| GET /clients/{id} | Erro | 404 | Cliente não encontrado |  
-| POST /clients | Sucesso | 201 | Cliente criado com sucesso |  
-| POST /clients | Erro | 422 | Dados inválidos |  
-| PUT /clients/{id} | Sucesso | 200 | Cliente atualizado |  
-| PUT /clients/{id} | Erro | 404 / 422 | Cliente inexistente ou dados inválidos |  
-| DELETE /clients/{id} | Sucesso | 204 | Cliente excluído |  
-| DELETE /clients/{id} | Erro | 404 | Cliente inexistente |  
+| **Endpoint** | **Status** | **Código** | **Descrição** |
+|---------------|------------|-------------|----------------|
+| GET /clients/{id} | ✅ Sucesso | 200 | Retorna o cliente |
+| GET /clients/{id} | ❌ Erro | 404 | Cliente não encontrado |
+| POST /clients | ✅ Sucesso | 201 | Cliente criado com sucesso |
+| POST /clients | ❌ Erro | 422 | Dados inválidos |
+| PUT /clients/{id} | ✅ Sucesso | 200 | Cliente atualizado |
+| PUT /clients/{id} | ❌ Erro | 404 / 422 | Cliente inexistente ou dados inválidos |
+| DELETE /clients/{id} | ✅ Sucesso | 204 | Cliente excluído |
+| DELETE /clients/{id} | ❌ Erro | 404 | Cliente inexistente |
 
 ---
 
@@ -46,10 +50,10 @@ Foi criada para exercitar conceitos fundamentais como:
 - ☕ **Java 17**  
 - 🌱 **Spring Boot 3.5.7**  
 - 🧩 **Spring Data JPA**  
-- 🗄️ **H2 Database (em memória)**  
+- 🗄️ **Banco de Dados H2 (em memória)**  
 - 📄 **Bean Validation (Jakarta Validation)**  
-- 🧱 **Maven**
-- 🌙 **Insomnia**
+- 🧱 **Maven**  
+- 🌙 **[Insomnia](https://insomnia.rest)**  
 - 🧰 **IntelliJ IDEA**
 
 ---
