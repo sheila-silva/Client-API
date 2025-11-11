@@ -30,7 +30,7 @@ Foi criada para exercitar conceitos fundamentais como:
 
 ## 🚦 Respostas HTTP testadas:
 
-| GET /clients/{id} | Sucesso | 200 | Retorna o cliente |
+| GET /clients/{id} | Sucesso | 200 | Retorna o cliente |  
 | GET /clients/{id} | Erro | 404 | Cliente não encontrado |
 | POST /clients | Sucesso | 201 | Cliente criado com sucesso |
 | POST /clients | Erro | 422 | Dados inválidos |
